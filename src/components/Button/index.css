@@ -1,0 +1,7 @@
+.button {
+  font-size: var(--regular-fs-secondary);
+  text-transform: uppercase;
+  padding: 1.2em 2em;
+  background-color: var(--dark-bg);
+  border-radius: 4.8em;
+}

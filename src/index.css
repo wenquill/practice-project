@@ -13,9 +13,44 @@ html {
   --secondary-fc: #73a6b1;
   --light-bg: #f1fdff;
   --dark-bg: #7ae5fd;
-  --secondary-bg: ##f9fadf;
+  --secondary-bg: #f9fadf;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-size: var(--regular-fs);
+  color: var(--regular-fc);
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+button:hover {
+  font-weight: 800;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all ease 0.2s;
+}
+
+a:hover {
+  font-weight: 800;
 }
