@@ -1,5 +1,5 @@
 .header {
-  margin: 0 60px;
+  margin: 0 3.3em;
   padding: 40px 0;
 }
 
@@ -7,4 +7,10 @@
   display: flex;
   justify-content: space-between;
   gap: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    margin: 0 1.5em;
+  }
 }
