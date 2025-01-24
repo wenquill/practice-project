@@ -1,0 +1,21 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+
+  --title-fs: 3.5rem; /* 63px */
+  --title-fs-secondary: 2.5rem; /* 46px */
+  --medium-fs: 1.5rem; /* 27px */
+  --regular-fs: 1.1rem; /* 20px */
+  --regular-fs-secondary: 1rem; /* 18px */
+
+  --regular-fc: #000;
+  --contrast-fc: #fff;
+  --secondary-fc: #73a6b1;
+  --light-bg: #f1fdff;
+  --dark-bg: #7ae5fd;
+  --secondary-bg: ##f9fadf;
+}
+
+body {
+  font-size: var(--regular-fs);
+}
