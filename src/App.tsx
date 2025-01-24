@@ -1,8 +1,21 @@
 import React from 'react';
 import './App.css';
+import Header from './compositions/Header';
+import HeroSection from './compositions/HeroSection';
+import AboutSection from './compositions/AboutSection';
+import BottomSection from './compositions/BottomSection';
+import Footer from './compositions/Footer';
 
 function App () {
-  return <div className='App'>App</div>;
+  return (
+    <>
+      <Header />
+      <HeroSection />
+      <AboutSection />
+      <BottomSection />
+      <Footer />
+    </>
+  );
 }
 
 export default App;
