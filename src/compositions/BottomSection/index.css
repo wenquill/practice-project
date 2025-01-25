@@ -1,0 +1,140 @@
+.bottom {
+    margin: 0 1.5em;
+    margin-top: 20em;
+}
+
+.bottom__container-1 {
+    background-color: var(--light-bg);
+}
+
+.bottom__text-container {
+    padding: 5em 3em;
+    position: relative;
+}
+
+.bottom__text {
+    font-size: var(--medium-fs);
+    width: 50%;
+}
+
+.bottom__image-1, .bottom__image-2 {
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bottom__image-1 {
+    z-index: 5;
+}
+
+.bottom__image-2 {
+    width: 50%;
+}
+
+.bottom__container-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+
+    margin: 10em 0;
+}
+
+.bottom__title {
+    font-size: var(--title-fs);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.botoom__desc-1 {
+    font-size: var(--regular-fs);
+    color: var(secondary-fc);
+}
+
+.bottom__desc-2 {
+    margin-top: 1em;
+    font-size: var(--medium-fs);
+}
+
+.bottom__goal-numbers {
+    font-size: var(--title-fs);
+    font-weight: 300;
+
+    display: flex;
+    gap: 1em;
+}
+
+.bottom__goal {
+    position: relative;
+}
+
+.bottom__goal-1::after, .bottom__goal-2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 1.8em;
+
+    width: 2px;
+    height: 100%;
+    background-color: var(--secondary-fc);
+}
+
+.bottom__goal-2::after {
+    left: 2.3em;
+}
+
+@media screen and (max-width: 1250px) {
+    .bottom {
+        margin-top: 10em;
+    }    
+}
+
+@media screen and (max-width: 992px) {
+    .bottom {
+        margin-top: 5em;
+    }  
+
+    .bottom__text-container {
+        padding: 3em 1em;
+    }    
+    
+    .bottom__text {
+        font-size: var(--regular-fs);
+        width: 100%;
+    }
+    
+    .bottom__image-1, .bottom__image-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bottom__container-2 {
+        margin: 5em 0;
+    }
+
+    .bottom__title, .bottom__goal-numbers {
+        font-size: var(--title-fs-secondary);
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .bottom {
+        margin-top: 2em;
+    }  
+}
+
+@media screen and (max-width: 400px) {
+    .bottom__container-2 {
+        margin: 3em 0;
+    }
+
+    .bottom__title, .bottom__goal-numbers {
+        font-size: var(--medium-fs);
+    }
+
+}
