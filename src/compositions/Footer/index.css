@@ -110,6 +110,7 @@
 
     .footer__title {
         width: 100%;
+        font-size: var(--title-fs-secondary);
     }
 
     .footer__icons {
@@ -128,13 +129,15 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .footer__title {
+        font-size: var(--medium-fs);
+    }
+}
+
 @media screen and (max-width: 550px) {
     .footer {
         padding: 1em;
-    }
-
-    .footer__title {
-        font-size: var(--title-fs-secondary);
     }
 
     .footer__form-wrapper h3 {

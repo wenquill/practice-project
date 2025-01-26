@@ -23,6 +23,7 @@
 
 .about-first__subtitle {
   font-size: var(--medium-fs);
+  font-weight: 400;
 }
 
 .about-first__desc {
@@ -38,19 +39,22 @@
   .about-first__title {
     font-size: var(--title-fs-secondary);
   }
+  
 }
 
-@media screen and (max-width: 496px) {
-  .about-first {
-    padding: 2em 1.5em;
-  }
-
+@media screen and (max-width: 600px) {
   .about-first__title {
     font-size: var(--medium-fs);
   }
 
   .about-first__subtitle {
     font-size: var(--regular-fs);
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .about-first {
+    padding: 2em 1.5em;
   }
 
   .about-first__desc {

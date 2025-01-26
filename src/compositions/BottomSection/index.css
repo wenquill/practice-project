@@ -109,17 +109,23 @@
     .bottom__image-1, .bottom__image-2 {
         display: none;
     }
+
+    .bottom__title, .bottom__goal-numbers {
+        font-size: var(--title-fs-secondary);
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     .bottom__container-2 {
         margin: 5em 0;
     }
+}
 
+@media screen and (max-width: 600px) {
     .bottom__title, .bottom__goal-numbers {
-        font-size: var(--title-fs-secondary);
+        font-size: var(--medium-fs);
     }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -132,9 +138,4 @@
     .bottom__container-2 {
         margin: 3em 0;
     }
-
-    .bottom__title, .bottom__goal-numbers {
-        font-size: var(--medium-fs);
-    }
-
 }

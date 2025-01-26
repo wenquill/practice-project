@@ -4,9 +4,7 @@ import Container from '../Container';
 import AboutCard from '../../components/AboutCard';
 import Button from '../../components/Button';
 
-type Props = {};
-
-const AboutSection = (props: Props) => {
+const AboutSection = () => {
   return (
     <div className='about'>
       <Container>
@@ -14,9 +12,9 @@ const AboutSection = (props: Props) => {
           <h2 className='about-first__title'>
             Ми - фонд підтримки постраждалих від вйни
           </h2>
-          <p className='about-first__subtitle'>
+          <h3 className='about-first__subtitle'>
             Наша мета – психологічна та гуманітарна допомога українцям
-          </p>
+          </h3>
           <p className='about-first__desc'>
             Кожен, хто звернеться, отримає допомогу, яка у наших силах
           </p>

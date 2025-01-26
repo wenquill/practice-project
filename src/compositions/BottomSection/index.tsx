@@ -2,9 +2,7 @@ import Button from '../../components/Button';
 import Container from '../Container';
 import './index.css'
 
-type Props = {};
-
-const BottomSection = (props: Props) => {
+const BottomSection = () => {
   return <section className='bottom'>
     <Container>
       <div className='bottom__container-1'>

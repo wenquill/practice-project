@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useWindowSize } from 'react-use';
 import './index.css';
-import MenuList from './MenuList';
+import MenuList, { IMenuItem } from './MenuList';
 
-type Props = {};
+type IMenuProps = {
+  menuItems: IMenuItem[]
+}
 
-const Menu = (props: Props) => {
+const Menu = ({menuItems}: IMenuProps) => {
   const { width } = useWindowSize();
   const [isMemuOpened, setIsMenuOpened] = useState(true);
   const [isBurgerMemuOpened, setIsBurgerMenuOpened] = useState(false);
@@ -15,7 +17,7 @@ const Menu = (props: Props) => {
   };
 
   useEffect(() => {
-    if (width <= 856) {
+    if (width <= 992) {
       setIsMenuOpened(false);
     } else {
       setIsMenuOpened(true);
@@ -26,7 +28,7 @@ const Menu = (props: Props) => {
   return (
     <div className='menu'>
       {isMemuOpened ? (
-        <MenuList ulClassName='menu__list' />
+        <MenuList menuItems={menuItems} ulClassName='menu__list' />
       ) : (
         <button
           className='menu__burger-btn'
@@ -44,7 +46,7 @@ const Menu = (props: Props) => {
             <img src='images/close.png' alt='close' width='40' />
           </button>
           <div className='menu__burger-container'>
-            <MenuList ulClassName='menu__burger-list' />
+            <MenuList menuItems={menuItems} ulClassName='menu__burger-list' />
           </div>
         </div>
       )}

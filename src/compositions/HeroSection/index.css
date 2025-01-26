@@ -35,7 +35,7 @@
   border-radius: 4.8em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
   .hero__title {
     font-size: var(--title-fs-secondary);
   }

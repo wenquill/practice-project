@@ -2,9 +2,7 @@ import React from 'react';
 import './index.css';
 import Container from '../Container';
 
-type Props = {};
-
-const HeroSection = (props: Props) => {
+const HeroSection = () => {
   return (
     <section className='hero__container'>
       <Container>

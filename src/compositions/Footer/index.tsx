@@ -3,9 +3,7 @@ import Container from '../Container';
 import './index.css'
 import Button from '../../components/Button';
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer = () => {
   return <footer className='footer'>
     <Container>
       <section className='footer__section-1'>
