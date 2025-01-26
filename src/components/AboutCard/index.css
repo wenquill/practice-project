@@ -31,16 +31,16 @@
   width: 50%;
 
   display: flex;
-  flex: 1; 
-  max-width: 585px; 
-  aspect-ratio: 585 / 424; 
+  flex: 1;
+  max-width: 585px;
+  aspect-ratio: 585 / 424;
   overflow: hidden;
 }
 
 .about-card__image {
-  width: 100%; 
+  width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1100px) {

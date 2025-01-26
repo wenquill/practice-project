@@ -8,7 +8,7 @@ type IButtonProps = {
 
 const Button = ({ text, color }: IButtonProps) => {
   return (
-    <button color={color} className='button'>
+    <button color={color} className="button">
       {text}
     </button>
   );

@@ -3,12 +3,12 @@ import './index.css';
 import Button from '../Button';
 
 export type IMenuItem = {
-  id: number
-  title: string
-}
+  id: number;
+  title: string;
+};
 
 type IMenuListProps = {
-  menuItems: IMenuItem[]
+  menuItems: IMenuItem[];
   ulClassName: string;
 };
 
@@ -16,11 +16,11 @@ const MenuList = ({ ulClassName, menuItems }: IMenuListProps) => {
   return (
     <>
       <ul className={ulClassName}>
-        {menuItems.map(item => 
-          <a href='#'>
-            <li className='menu__item'>{item.title}</li>
+        {menuItems.map((item) => (
+          <a href="#">
+            <li className="menu__item">{item.title}</li>
           </a>
-          )}
+        ))}
       </ul>
       <Button text={'Підтримати фонд'} />
     </>

@@ -7,27 +7,27 @@ import { IMenuItem } from '../../components/Menu/MenuList';
 const menuList: IMenuItem[] = [
   {
     id: 1,
-    title: 'Контакти'
+    title: 'Контакти',
   },
-   {
+  {
     id: 2,
     title: 'Головна',
-   }, 
-   {
+  },
+  {
     id: 3,
-    title: 'З чим ми працюємо'
-   }
-]
+    title: 'З чим ми працюємо',
+  },
+];
 
 const Header = () => {
   return (
-    <header className='header'>
+    <header className="header">
       <Container>
-        <div className='header__inner-container'>
-          <div className='header__logo-container'>
-            <img src='images/logo.png' alt='logo' width='65' />
+        <div className="header__inner-container">
+          <div className="header__logo-container">
+            <img src="images/logo.png" alt="logo" width="65" />
           </div>
-          <Menu menuItems={menuList}/>
+          <Menu menuItems={menuList} />
         </div>
       </Container>
     </header>

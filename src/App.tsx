@@ -5,7 +5,7 @@ import AboutSection from './compositions/AboutSection';
 import BottomSection from './compositions/BottomSection';
 import Footer from './compositions/Footer';
 
-function App () {
+function App() {
   return (
     <>
       <Header />
